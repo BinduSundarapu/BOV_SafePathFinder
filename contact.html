@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Safe Finder Path</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; }
+    nav { background: #1e3a8a; padding: 10px; color: white; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; }
+    .container { max-width: 600px; margin: 40px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    input, textarea, button { width: 100%; padding: 10px; margin-top: 10px; }
+    button { background: #2563eb; color: white; border: none; cursor: pointer; }
+    button:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/about">About</a>
+    <a href="/find">Find Path</a>
+    <a href="/contact">Contact</a>
+    <a href="/logout">Logout</a>
+  </nav>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form method="POST" action="/contact">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

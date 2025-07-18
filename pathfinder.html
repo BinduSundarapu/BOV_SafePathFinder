@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safety Path Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background: #1e90ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #results {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛡 Safety Path Finder</h1>
+    <form method="POST" action="/find_path">
+        <label>Source PIN:</label><br>
+        <input type="text" name="source" required><br>
+        <label>Destination PIN:</label><br>
+        <input type="text" name="destination" required><br>
+        <input type="submit" value="Find Path">
+    </form>
+
+    {% if result %}
+        {% if result is string %}
+            <p style="color:red;">{{ result }}</p>
+        {% else %}
+            <div id="results">
+                <h2>✅ Recommended Safest Path</h2>
+                <p><strong>Path:</strong> {{ result.best.path | join(" ➝ ") }}</p>
+                <p><strong>Safety Score:</strong> {{ result.best.mean_safety }}</p>
+                <p><strong>Safety Code:</strong> {{ result.best.safety_code }}</p>
+
+                <h3>📌 All Possible Paths:</h3>
+                <ul>
+                    {% for route in result.routes %}
+                        <li>
+                            <strong>Path:</strong> {{ route.path | join(" ➝ ") }}<br>
+                            <strong>Score:</strong> {{ route.mean_safety }} |
+                            <strong>{{ route.safety_code }}</strong>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endif %}
+</body>
+</html>

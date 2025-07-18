@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Find Safe Path</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; }
+    nav { background: #1e3a8a; padding: 10px; color: white; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; }
+    .container { max-width: 700px; margin: 40px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    input, button { padding: 10px; margin-top: 10px; width: 100%; }
+    button { background: #2563eb; color: white; border: none; cursor: pointer; }
+    button:hover { background: #1d4ed8; }
+    ul { list-style-type:none; padding-left: 0; }
+    ul li { background: #e9ecef; margin: 5px 0; padding: 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/about">About</a>
+    <a href="/find">Find Path</a>
+    <a href="/contact">Contact</a>
+    <a href="/logout">Logout</a>
+  </nav>
+  <div class="container">
+    <h2>Find Safe Path</h2>
+    <form method="POST" action="/find_path">
+      <input type="text" name="source" placeholder="Source PIN" required />
+      <input type="text" name="destination" placeholder="Destination PIN" required />
+      <button type="submit">Find Path</button>
+    </form>
+
+    {% if result %}
+    <div style="margin-top: 20px;">
+      <h3>Recommended Safest Path</h3>
+      <p><strong>Path:</strong> {{ result.best.path | join(' ➝ ') }}</p>
+      <p><strong>Safety Score:</strong> {{ result.best.mean_safety }}</p>
+      <p><strong>Safety Code:</strong> {{ result.best.safety_code }}</p>
+
+      <h4>All Possible Paths:</h4>
+      <ul>
+        {% for route in result.routes %}
+          <li><strong>Path:</strong> {{ route.path | join(' ➝ ') }} — Score: {{ route.mean_safety }} — {{ route.safety_code }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
