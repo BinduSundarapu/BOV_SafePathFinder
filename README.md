@@ -7,16 +7,16 @@ The **Safety Path Finder** is a web-based application designed to help women ide
 
 ## 📌 Table of Contents
 
-- [Problem Statement]
-- [Features]
-- [Tech Stack]
-- [How It Works]
-- [Installation]
-- [Usage]
-- [Sample Output]
-- [Future Scope]
-- [Screenshots]
-- [Credits]
+- Problem Statement
+- Features
+- Tech Stack
+- How It Works
+- Installation
+- Usage
+- Sample Output
+- Future Scope
+- Screenshots
+- Credits
 
 ---
 
@@ -119,8 +119,7 @@ Incidents like the **Disha case (Hyderabad, 2019)** highlight the importance of 
 
 ## 👩‍💻 Credits
 
-Developed by **Bindu Sundarapu**  
-> Third-Year B.Tech CSE Student  
+Developed by **Bindu Sundarapu**   
 > Passionate about using AI/ML and Python to solve real-world problems.
 
 ---
