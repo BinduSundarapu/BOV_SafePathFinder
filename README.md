@@ -116,16 +116,16 @@ Incidents like the **Disha case (Hyderabad, 2019)** highlight the importance of 
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-![Login Page](screenshots/login_safetypath.png)
+![Login Page](Screenshots/login_safetypath.png)
 
 ### About Page
-![About Page](screenshots/about_safetypath.png)
+![About Page](Screenshots/about_safetypath.png)
 
 ### 🗺️ Pathfinder Page
-![Pathfinder Page](screenshots/pathfinder.png)
+![Pathfinder Page](Screenshots/pathfinder.png)
 
 ### ✅ Route Output
-![Route Output](screenshots/result_safetypath.png)
+![Route Output](Screenshots/result_safetypath.png)
 
 ---
 
