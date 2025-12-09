@@ -116,7 +116,7 @@ Incidents like the **Disha case (Hyderabad, 2019)** highlight the importance of 
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-![Login](https://github.com/BinduSundarapu/blob/main/login.png)
+![Login](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/login_safetypath.png)
 
 ### About Page
 ![About Page](Screenshots/about_safetypath.png)
