@@ -125,7 +125,8 @@ Incidents like the **Disha case (Hyderabad, 2019)** highlight the importance of 
 
 ### ✅ Route Output
 ![Route Output](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/result_safetypath.png)
-![Route Output](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/result1_safetypath.png)
+
+![Route Output](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/result2_safetypath.png)
 
 ---
 
