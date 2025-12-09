@@ -113,19 +113,19 @@ Incidents like the **Disha case (Hyderabad, 2019)** highlight the importance of 
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
 
 ### 🔐 Login Page
 ![Login](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/login_safetypath.png)
 
 ### About Page
-![About Page](Screenshots/about_safetypath.png)
+![About Page](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/about_safetypath.png))
 
 ### 🗺️ Pathfinder Page
-![Pathfinder Page](Screenshots/pathfinder.png)
+![Pathfinder Page](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/pathfinder.png)
 
 ### ✅ Route Output
-![Route Output](Screenshots/result_safetypath.png)
+![Route Output](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/result_safetypath.png)
+![Route Output](https://github.com/BinduSundarapu/BOV_SafePathFinder/blob/main/result1_safetypath.png)
 
 ---
 
